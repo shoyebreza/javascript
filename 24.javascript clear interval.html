@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+	<title> documentation </title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+				<h2>javascript this interval </h2>
+	
+		</div>
+		
+		<div class="main">
+		<div id="show"> 
+		</div>
+			<script>
+				var i=0;
+				var x=setInterval(function(){
+				i++;
+					alert("interval time");
+					if(i==5){
+						clearInterval(x);
+					}
+				},1000)
+				
+			</script>
+		
+		</div>
+		
+		<div class="footer">
+			<h2>footer content</h2>
+		</div>
+	</section>
+</body>
+</html>

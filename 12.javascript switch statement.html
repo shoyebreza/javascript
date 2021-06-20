@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+	<title> documentation </title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+				<h2>javascript switch statement </h2>
+	
+		</div>
+		
+		<div class="main">
+		<input type="text" id="inp">
+		<button type="button" onclick="checkcode()" >check</button>
+		<div id="show"> 
+		
+		</div>
+			<script>
+				function checkcode(){
+					var txt;
+					var code=document.getElementById("inp").value;
+					switch(code){
+						case "java":
+						txt="i love java ";
+						break;
+					case "c#":
+						txt="i love c#";
+						break;
+					case "php":
+						txt="i love php";
+						break;
+					default:
+					txt="unknown.....";
+					}
+					document.getElementById("show").innerHTML=txt;
+				}
+				
+			</script>
+		
+		</div>
+		
+		<div class="footer">
+			<h2>footer content</h2>
+		</div>
+	</section>
+</body>
+</html>

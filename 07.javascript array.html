@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+	<title>javascript documentation </title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+				<h2>javascript array</h2>
+		</div>
+		
+		<div class="main">
+		<div id="show"> </div>
+			<script>
+				var arr1= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+				var arr2= [21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+				var allarr= arr1.concat(arr2);  /*all array concate*/
+				var color= ['hotpink','pink','black','red','yellow','blue','green'];
+				var num= [99, 55, 33, 11, 45, 223, 456, 01, 22, 02, 01];
+				document.write("print index 10 value:"+arr1[10]+"<br/>"); /*array index print*/
+				document.write("concated array result:"+allarr+"<br/>");
+				color.sort();
+				document.write("after sorting color:"+color+"<br/>");
+				function arrsort(x,y){
+					return(x-y);
+				}/* this function accending sorting */
+				
+				function dsort(x,y){
+					return(y-x);
+				
+				}/*this function is decending sorting*/
+				num.sort(dsort);
+				document.write("after sorting number decending:"+num+"<br/>");
+				document.write("the length of array is :"+arr1.length);
+				/*num.shift() remove first element ,num.unshift() element enter the first position,, pop() & push remove & enter the last element of array*/
+				
+			</script>
+		
+		</div>
+		
+		<div class="footer">
+			<h2>footer content</h2>
+		</div>
+	</section>
+</body>
+</html>

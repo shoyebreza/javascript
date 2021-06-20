@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+	<title> documentation </title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+				<h2>javascript this prototypes </h2>
+	
+		</div>
+		
+		<div class="main">
+		<div id="show"> 
+		</div>
+			<script>
+				function totalNum(a,b){
+						this.x=a;
+						this.y=b;
+						this.sum=function(){
+							return this.x * this.y;
+						}
+				}
+				var tn= new totalNum(20,30);
+				
+				document.write(tn.sum());
+				
+			</script>
+		
+		</div>
+		
+		<div class="footer">
+			<h2>footer content</h2>
+		</div>
+	</section>
+</body>
+</html>

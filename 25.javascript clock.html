@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+	<title> documentation </title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+				<h2>javascript this interval </h2>
+	
+		</div>
+		
+		<div class="main">
+		<div>
+			<span id="hour"></span>:
+			<span id="minute"></span>:
+			<span id="second"></span>
+		</div>
+			<script>
+				function clock(){
+				var date= new Date();
+				var hour= date.getHours();
+				var minutes= date.getMinutes();
+				var seconds= date.getSeconds();
+				
+				document.getElementById("hour").innerHTML=hour;
+				document.getElementById("minute").innerHTML=minutes;
+				document.getElementById("second").innerHTML=seconds;
+				
+				}
+				
+				setInterval(clock, 1000);
+				
+			</script>
+		
+		</div>
+		
+		<div class="footer">
+			<h2>footer content</h2>
+		</div>
+	</section>
+</body>
+</html>

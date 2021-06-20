@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+	<title> documentation </title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+				<h2>javascript this keyword </h2>
+	
+		</div>
+		
+		<div class="main">
+		<div id="show"> 
+		</div>
+			<script>
+				function mymoney(){
+					var a= 100;
+					this.b=200;
+					this.c=300;
+					this.d=400;
+					this.e=function(){
+						return this.b+this.c+this.d;
+					
+					}
+				
+				
+				}
+				var m=new mymoney();
+				
+				document.write(m.e());
+				
+			</script>
+		
+		</div>
+		
+		<div class="footer">
+			<h2>footer content</h2>
+		</div>
+	</section>
+</body>
+</html>

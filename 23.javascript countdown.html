@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+	<title> documentation </title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+				<h2>javascript this countdown</h2>
+	
+		</div>
+		
+		<div class="main">
+		
+		<div>
+					<button type="button" onclick="countdownInit()"> start<button/>
+					<button type="button" onclick="clearCountdown()">stop<button/>
+		</div>
+		<div id="show">
+		
+		</div>
+			<script>
+				var countdown;
+				var countdownNum;
+				function countdownInit(){ 
+					countdownNum=100;
+					countdowntriger();
+				
+				}
+				function countdowntriger(){
+					if(countdownNum > 0){
+						countdownNum--;
+						document.getElementById("show").innerHTML=countdownNum;
+						if(countdownNum > 0){
+							countdown=setTimeout("countdowntriger()",1000);
+						}
+					}
+				
+				}
+				function clearCountdown(){
+					clearTimeout(countdown);	
+				}
+				
+			</script>
+			
+		</div>
+		
+		<div class="footer">
+			<h2>footer content</h2>
+		</div>
+	</section>
+</body>
+</html>
